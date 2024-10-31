@@ -7,7 +7,7 @@
 
   /*========== Colors ==========*/
   /*Color mode HSL(hue, saturation, lightness)*/
-  --first-color: hsl(14, 98%, 50%);
+  --first-color: hsl(213, 98%, 50%);
   --black-color: hsl(0, 0%, 0%);
   --black-color-light: hsl(0, 0%, 40%);
   --white-color: hsl(0, 0%, 95%);
@@ -16,6 +16,7 @@
   --text-color-light: hsl(0, 0%, 64%);
   --body-color: hsl(0, 0%, 87%);
   --container-color: hsl(0, 0%, 83%);
+
 
   /*========== Font and typography ==========*/
   /*.5rem = 8px | 1rem = 16px ...*/
@@ -109,14 +110,17 @@ img {
 
 /*========== Variables Dark theme ==========*/
 body.dark-theme {
-  --first-color: hsl(14, 80%, 50%);
+  --first-color: hsl(213, 98%, 50%);
   --black-color: hsl(0, 0%, 18%);
   --black-color-light: hsl(0, 0%, 20%);
   --title-color: hsl(0, 0%, 95%);
   --text-color: hsl(0, 0%, 70%);
   --body-color: hsl(0, 0%, 8%);
   --container-color: hsl(0, 0%, 12%);
+
 }
+
+
 
 /*========== 
 	Color changes in some parts of 
@@ -128,7 +132,7 @@ body.dark-theme {
 
 .dark-theme .section__title-1::after,
 .dark-theme .section__title-2::after {
-  background-color: hsla(14, 70%, 50%, .2);
+  background-color: hsla(221, 70%, 50%, 0.2);
 }
 
 .dark-theme :is(.home__arrow, .home__line, .about__line) {
@@ -137,7 +141,7 @@ body.dark-theme {
 
 .dark-theme .home__description b {
   background: linear-gradient(90deg,
-      hsla(14, 80%, 50%, .3),
+      hsla(213, 80%, 50%, 0.3),
       hsla(14, 80%, 50%, 0));
 }
 
@@ -204,7 +208,7 @@ body.dark-theme {
   content: "";
   width: 40px;
   height: 28px;
-  background-color: hsla(14, 98%, 50%, .2);
+  background-color: hsla(239, 98%, 50%, 0.2);
   position: absolute;
   top: -4px;
   right: -8px;
@@ -499,7 +503,7 @@ body.dark-theme {
 
 .home__description b {
   background: linear-gradient(90deg,
-      hsla(14, 98%, 50%, .3),
+      hsla(223, 98%, 50%, 0.3),
       hsla(14, 98%, 50%, 0));
 }
 
