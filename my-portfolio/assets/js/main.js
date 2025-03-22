@@ -71,6 +71,34 @@ const sendEmail = (e) => {
     );
 };
 
+
+//HOME
+const typingText = document.getElementById("typing-text");
+const words = ["Full-Stack Developer", "MERN Stack Enthusiast", "Tech Explorer"];
+let wordIndex = 0;
+let charIndex = 0;
+let isDeleting = false;
+
+function typeEffect() {
+    let currentWord = words[wordIndex];
+    let displayText = isDeleting 
+        ? currentWord.substring(0, charIndex--) 
+        : currentWord.substring(0, charIndex++);
+    
+    typingText.innerHTML = `<b>${displayText}</b>|`;
+
+    if (!isDeleting && charIndex === currentWord.length) {
+        setTimeout(() => isDeleting = true, 1000);
+    } else if (isDeleting && charIndex === 0) {
+        isDeleting = false;
+        wordIndex = (wordIndex + 1) % words.length;
+    }
+
+    setTimeout(typeEffect, isDeleting ? 100 : 200);
+}
+typeEffect();
+
+
 contactForm.addEventListener("submit", sendEmail);
 
 /*=============== SHOW SCROLL UP ===============*/
