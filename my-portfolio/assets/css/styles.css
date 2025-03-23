@@ -795,7 +795,6 @@ body.dark-theme {
 /*=============== PROJECTS ===============*/
 
 .projects {
-  /* background-color: var(--container-color); */
   transition: background-color .4s;
 }
 
@@ -804,6 +803,7 @@ body.dark-theme {
 }
 
 .projects__card {
+  background-color: var(--container-color);
   padding: 1rem;
   position: relative;
   overflow: hidden;
