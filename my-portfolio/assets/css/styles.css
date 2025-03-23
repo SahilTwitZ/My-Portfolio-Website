@@ -910,7 +910,7 @@ body.dark-theme {
 
 /*=============== CONTACT ===============*/
 .contact__container {
-  /* background-color: var(--container-color); */
+  background-color: var(--container-color);
   position: relative;
   grid-template-rows: 300px max-content max-content;
   row-gap: 0;
